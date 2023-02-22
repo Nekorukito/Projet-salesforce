@@ -14,9 +14,6 @@ Utiliser la branche **dev** pour le projet. La branche **main** sera utilisée p
 ```sh
 # Pour récupérer le projet
 git clone https://github.com/Nekorukito/Projet-salesforce.git
-
-# Ou 
-git clone https://github.com/Nekorukito/Projet-salesforce.git
 ```
 
 Si on est sur la branche *main*, utiliser la commande :
