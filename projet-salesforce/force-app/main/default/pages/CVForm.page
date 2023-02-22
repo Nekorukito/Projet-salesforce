@@ -1,0 +1,29 @@
+<apex:page controller="CustomObjectFormController">
+  <apex:form >
+    <apex:pageBlock title="Soumettre votre CV">
+      <apex:pageBlockSection title="Informations personnelles">
+        <apex:inputField value="{!contact.FirstName}" required="true" />
+        <apex:inputField value="{!contact.LastName}" required="true" />
+        <apex:inputField value="{!contact.Email}" required="true" />
+        <apex:inputField value="{!contact.Phone}" required="true" />
+      </apex:pageBlockSection>
+
+      <apex:pageBlockSection title="Résumé">
+        <apex:inputTextarea value="{!contact.Summary__c}" required="true" />
+      </apex:pageBlockSection>
+
+      <apex:pageBlockSection title="Expérience professionnelle">
+        <apex:inputTextarea value="{!contact.Experience__c}" required="true" />
+      </apex:pageBlockSection>
+
+      <apex:pageBlockSection title="Formation">
+        <apex:inputTextarea value="{!contact.Education__c}" required="true" />
+      </apex:pageBlockSection>
+
+      <apex:pageBlockButtons >
+        <apex:commandButton value="Soumettre" action="{!submit}" />
+      </apex:pageBlockButtons>
+    </apex:pageBlock>
+    <apex:messages />
+  </apex:form>
+</apex:page>
